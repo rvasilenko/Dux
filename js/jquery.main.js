@@ -1,6 +1,10 @@
 jQuery(function() {
 	initSlideshow();
 	initProductsScroller();
+	jQuery('.lightbox').lightbox({
+		overlayOpacity : 0.5,
+		fileBottomNavCloseImage : 'images/close-lightbox.gif'
+	});
 });
 
 function initSlideshow() {

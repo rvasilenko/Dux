@@ -636,3 +636,14 @@ a:hover {
 	font:10px  Verdana, Geneva, sans-serif;
 	color: #999898;
 }
+#imageData #caption {
+	color:#3e3e3e;
+	font-size: 18px;
+	font-weight: normal;
+	padding: 8px 0 4px 10px;
+	display: block;
+}
+#imageData #bottomNavClose {
+	width: 30px;
+	margin: 6px 0 0;
+}
