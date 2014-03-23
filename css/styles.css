@@ -1,0 +1,569 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Fonts */
+@font-face {
+	font-family: "PF Din Text Cond Pro";
+	src: url('../fonts/933959961-PFDinTextCondPro-Bold.eot');
+	src: url('../fonts/933959961-PFDinTextCondPro-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/933959961-PFDinTextCondPro-Bold.svg#PF Din Text Cond Pro') format('svg'),
+	url('../fonts/933959961-PFDinTextCondPro-Bold.woff') format('woff'),
+	url('../fonts/933959961-PFDinTextCondPro-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.alignright {
+	float: right;
+}
+.alignleft {
+	float: left;
+}
+body {
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #000;
+	min-width: 980px;
+}
+
+a {
+	color: #226edc;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+.center {
+	margin: 0 auto;
+	width: 980px;
+}
+#header {
+	position: relative;
+	z-index: 10;
+}
+#header .center {
+	position: relative;
+	z-index: 2;
+}
+#header > .center {
+	height: 157px;
+}
+
+.logos {
+	position: absolute;
+	left:0;
+	top: 104px;
+}
+
+.logos li {
+	float: left;
+	margin: 0 22px 0 0;
+}
+.toolbar {
+	position: absolute;
+	right: 0;
+	top: 122px;
+}
+.buttons {
+	float: right;
+}
+.buttons > li {
+	float: left;
+}
+
+.buttons a.vimeo,
+.buttons a.email{
+	display: block;
+	width: 35px;
+	height: 35px;
+	background: url(../images/sprite.png) no-repeat;
+	text-indent: -9999px;
+}
+.buttons a.email {
+	background-position: -35px 0;
+}
+.buttons .lang {
+	position: relative;
+	height: 35px;
+	width: 35px;
+	background: url(../images/sprite.png) no-repeat -70px 0;
+}
+.buttons .lang ul {
+	position: absolute;
+	left: 0;
+	top: 35px;
+	display: none;
+	padding: 4px 0 0 4px;
+	text-transform: uppercase;
+}
+.buttons .lang:hover ul {
+	display: block;
+	white-space: nowrap;
+	font: bold 11px Verdana, Geneva, sans-serif;
+}
+.buttons .lang li {
+	display: inline-block;
+	padding: 0 4px;
+	border-left: 1px solid #000;
+}
+.buttons .lang li:first-child {
+	border-left: none;
+}
+.buttons .lang a {
+	color: #000;
+	font-weight: bold;
+}
+.buttons .lang .active a {
+	color: #fff;
+}
+.buttons .selected-lang {
+	display: block;
+	width: 35px;
+	height: 17px;
+	padding: 9px 0;
+	font-size: 17px;
+	font-weight: bold;
+	text-align: center;
+	background: url(../images/sprite.png) no-repeat -105px 0;
+}
+.toolbar .caption {
+	float: left;
+	font: 14px "PF Din Text Cond Pro";
+	letter-spacing: 1px;
+	padding: 11px 27px;
+}
+.top-bar {
+	position: absolute;
+	top:0;
+	right: 0;
+}
+.search-form {
+	border: 1px solid #e8c100;
+	width: 227px;
+	height: 25px;
+	padding: 4px 8px 7px 9px;
+	background: url(../images/sprite.png) no-repeat 0 -35px;
+	-moz-box-shadow: 2px 2px 4px 0 #bbb;
+	-webkit-box-shadow: 2px 2px 4px 0 #bbb;
+	box-shadow: 2px 2px 4px 0 #bbb;
+}
+.search-form button {
+	float: left;
+	width: 17px;
+	height: 17px;
+	background: url(../images/sprite.png) no-repeat -143px -1px;
+	border: 0;
+	text-indent: -9999px;
+	cursor: pointer;
+	margin: 4px 0 0;
+}
+.search-form input[type=text] {
+	width: 182px;
+	float: right;
+	border: 0;
+	padding: 5px 9px 4px;
+	height: 15px;
+	font-size: 12px;
+	line-height: 16px;
+	color: #999;
+}
+.top-bar .search-form {
+	float: left;
+}
+.top-bar .slogan {
+	float: left;
+	padding: 8px 16px;
+	font-size: 17px;
+	font-style: italic;
+}
+#nav {
+	background: url(../images/sprite.png) repeat-x 0 -71px;
+	height: 67px;
+	position: relative;
+	z-index: 1;
+}
+.nav-secondary {
+	text-align: center;
+	font-family: Verdana, Geneva, sans-serif;
+}
+.nav-secondary li {
+	display: inline-block;
+	padding: 0 17px;
+}
+.nav-secondary li.active {
+	padding: 0;
+}
+.nav-secondary a {
+	display: block;
+	color: #fff;
+	position: relative;
+}
+.nav-secondary .active a:after,
+.nav-secondary .active a:before {
+	position: absolute;
+	width: 28px;
+	height: 22px;
+	content: '';
+	background: url(../images/sprite.png) no-repeat -160px 0;
+	left: 0;
+	top: 0;
+}
+.nav-secondary .active a:after {
+	left: auto;
+	right: 0;
+	background-position: -190px 0;
+}
+.nav-secondary a span {
+	display: block;
+	padding: 3px 0 4px;
+}
+.nav-secondary a:hover {
+	text-decoration: none;
+}
+.nav-secondary .active a {
+	color: #4c4c4c;
+	padding: 0 28px;
+}
+.nav-secondary .active a span {
+	background: #fff;
+	border-bottom: 1px solid #e8e7e5;
+}
+
+.nav-holder {
+	width: 100%;
+}
+.nav-holder:after {
+	display: block;
+	content: '';
+	clear: both;
+}
+.nav-frame {
+	float: left;
+	position: relative;
+	left: 50%;
+}
+.nav-primary {
+	position: relative;
+	float: left;
+	left: -50%;
+	border-right: 1px solid #bfbfbf;
+	font:13px Verdana, Geneva, sans-serif;
+}
+.nav-primary > li {
+	float: left;
+	border-left: 1px solid #bfbfbf;
+	position: relative;
+}
+.nav-primary > li > a {
+	display: block;
+	color: #000;
+	padding: 12px 29px 11px 24px;
+	text-shadow: 1px 1px #fff;
+	position: relative;
+	z-index: 2;
+}
+.nav-primary > li:hover > a {
+	background: #fff;
+	text-decoration: none;
+}
+
+.nav-primary > li > ul {
+	position: absolute;
+	left: -1px;
+	top: 36px;
+	border: 1px solid #bfbfbf;
+	background: #fff;
+	width: 236px;
+	z-index: 1;
+	padding: 22px 14px 12px;
+	display: none;
+	-moz-border-bottom-left-radius: 2px;
+	-moz-border-bottom-right-radius: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+	-webkit-border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+.nav-primary > li:hover > ul {
+	display: block;
+}
+.nav-primary > li > ul a {
+	color: #000;
+	display: inline-block;
+}
+.nav-primary > li > ul a:hover {
+	text-decoration: none;
+}
+.nav-primary > li > ul a:hover span.text {
+	text-decoration: underline;
+}
+.nav-primary > li > ul a span {
+	display: table-cell;
+	vertical-align: middle;
+}
+.nav-primary > li > ul a span.ico {
+	width: 56px;
+	height: 37px;
+	text-align: center;
+}
+.nav-primary > li > ul a span.ico img {
+	vertical-align: middle;
+}
+#main {
+	padding: 25px 0 37px;
+	margin: 0 auto;
+	width: 980px;
+}
+
+.slideshow {
+	border: 1px solid #e6e6e6;
+	position: relative;
+}
+.slideshow .slides {
+	min-height: 298px;
+	position: relative;
+}
+
+.slideshow .slide {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	background: #fff;
+}
+.slideshow .slide.active {
+	z-index: 2;
+}
+.slideshow .slide .content {
+	position: absolute;
+	left: 74px;
+	top: 30px;
+	color: #666;
+	width: 422px;
+	line-height: 18px;
+	padding: 0 0 40px;
+	min-height: 182px;
+}
+.slideshow h2 {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0 0 17px;
+	color: #000;
+	line-height: normal;
+}
+.slideshow img {
+	vertical-align: middle;
+}
+.slideshow .btn-more {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.slideshow .btn-prev,
+.slideshow .btn-next {
+	position: absolute;
+	width: 36px;
+	height: 36px;
+	text-indent: -9999px;
+	background: url(../images/sprite.png) no-repeat;
+	z-index: 5;
+	top: 50%;
+	margin: -18px 0 0;
+}
+.slideshow .btn-prev {
+	background-position: 0 -139px;
+	left: 18px;
+}
+.slideshow .btn-next {
+	background-position: -38px -139px;
+	right: 18px;
+}
+.slideshow .pagination {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	bottom: 6px;
+	z-index: 6;
+}
+.slideshow .pagination li {
+	display: inline-block;
+	padding: 0 4px;
+}
+.slideshow .pagination a {
+	display: block;
+	width: 7px;
+	height: 7px;
+	text-indent: -9999px;
+	background: #ffca4c;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+.slideshow .pagination .active a {
+	background: #7f7f7f;
+}
+.btn-more {
+	color: #333;
+	font-weight: bold;
+	font-size: 13px;
+	border: 1px solid #e8c100;
+	padding: 3px 16px 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	text-shadow: 1px 1px #fbd783;
+	background: rgb(254,206,24); /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iI2ZlY2UxOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmEyMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, rgba(254,206,24,1) 1%, rgba(242,162,0,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(254,206,24,1)), color-stop(100%,rgba(242,162,0,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(254,206,24,1) 1%,rgba(242,162,0,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(254,206,24,1) 1%,rgba(242,162,0,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(254,206,24,1) 1%,rgba(242,162,0,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(254,206,24,1) 1%,rgba(242,162,0,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fece18', endColorstr='#f2a200',GradientType=0 ); /* IE6-8 */
+	-moz-box-shadow: 2px 2px 4px 0 #bbb;
+	-webkit-box-shadow: 2px 2px 4px 0 #bbb;
+	box-shadow: 2px 2px 3px 0 #bbb;
+}
+
+#footer {
+	margin: 0 auto;
+	width: 980px;
+	padding: 0 0 42px;
+}
+.products {
+	border-bottom: 1px solid #ccc;
+	margin: 0 0 18px;
+}
+.products h3 {
+	font-weight: bold;
+	font-size: 17px;
+	color: #000;
+	text-align: center;
+	margin: 0 0 35px;
+}
+.products h3 span {
+	border-bottom: 3px solid #f6c300;
+	padding: 0 6px;
+}
+.products-scroller {
+	padding: 0 50px;
+	margin: 0 0 35px;
+	position: relative;
+}
+.products-scroller .holder {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.products-scroller .frame {
+	margin: 0 0 0 -1px;
+}
+.products-scroller ul {
+	overflow: hidden;
+	width: 99999px;
+}
+.products-scroller li {
+	float: left;
+	border-left: 1px solid #c3c3c4;
+	width: 116px;
+	padding: 12px 5px 0;
+}
+.products-scroller li a {
+	color: #333232;
+}
+.products-scroller li strong {
+	display: block;
+	font-weight: bold;
+	line-height: 17px;
+	margin: 0 0 5px;
+	padding: 0 17px;
+}
+.products-scroller li img {
+	margin: 0 auto;
+	display: block;
+}
+.products-scroller .btn-prev,
+.products-scroller .btn-next {
+	position: absolute;
+	width: 31px;
+	height: 31px;
+	text-indent: -9999px;
+	background: url(../images/sprite.png) no-repeat;
+	top: 50%;
+	margin: -14px 0 0;
+}
+
+.products-scroller .btn-prev {
+	background-position: -79px -139px;
+	left: 11px;
+}
+.products-scroller .btn-next {
+	background-position: -113px -139px;
+	right: 11px;
+}
+.footer-menu {
+	font:12px  Verdana, Geneva, sans-serif;
+	text-align: center;
+	margin: 0 0 32px;
+}
+.footer-menu li {
+	display: inline-block;
+	padding: 0 18px;
+}
+.footer-menu a {
+	color: #010101;
+}
+.copyright {
+	text-align: center;
+	font:10px  Verdana, Geneva, sans-serif;
+	color: #999898;
+}
