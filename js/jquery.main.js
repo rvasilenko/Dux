@@ -6,7 +6,38 @@ jQuery(function() {
 		fileBottomNavCloseImage : 'images/close-lightbox.gif'
 	});
 });
+jQuery(window).load(function() {
+	initPlayers();
+});
 
+function initPlayers() {
+	jQuery('ul.videos').each(function() {
+		var iframes = jQuery('iframe.yt_players', this);
+		var players = new Array();
+
+		function onYouTubeIframeAPIReady() {
+			iframes.each(function(index, iframe) {
+				var t = new YT.Player(jQuery(iframe).attr('id'), {
+					events: {
+						'onStateChange': onPlayerStateChange
+					}
+				});
+				players.push(t);
+			})
+		}
+		onYouTubeIframeAPIReady();
+
+		function onPlayerStateChange(event) {
+			if (event.data == YT.PlayerState.PLAYING) {
+				var temp = event.target.a.src;
+				for (var i = 0; i < players.length; i++) {
+					if (players[i].a.src != temp)
+						players[i].stopVideo();
+				}
+			}
+		}
+	});
+}
 function initSlideshow() {
 	jQuery('div.slideshow').fadeGallery({
 		slides: 'ul.slides > li',

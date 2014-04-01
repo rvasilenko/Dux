@@ -609,7 +609,8 @@ a:hover {
 .breadcrumbs:after,
 .post-single:after,
 .page-content:after,
-.banners:after {
+.banners:after,
+.videos:after {
 	display: block;
 	content: '';
 	clear: both;
@@ -721,6 +722,28 @@ a:hover {
 }
 .banner .more:hover {
 	text-decoration: none;
+}
+.videos {
+	margin: -12px -20px 0 0;
+	width: 1000px;
+}
+.videos .caption {
+	display: block;
+	font-weight: bold;
+	font-size: 16px;
+	margin: 0 0 12px;
+}
+.videos li {
+	float: left;
+	width: 480px;
+	margin: 0 20px 20px 0;
+}
+.videos .player {
+	margin: 0 0 0 2px;
+	border: 1px solid #8c8b88;
+}
+.videos .player iframe {
+	display: block;
 }
 .products h3 {
 	font-weight: bold;
