@@ -608,7 +608,8 @@ a:hover {
 }
 .breadcrumbs:after,
 .post-single:after,
-.page-content:after {
+.page-content:after,
+.banners:after {
 	display: block;
 	content: '';
 	clear: both;
@@ -674,6 +675,52 @@ a:hover {
 .page-content .alignright img {
 	display: block;
 	margin: 0 0 13px;
+}
+.banners {
+	width: 999px;
+	margin: 0 -17px 0 0;
+	padding: 9px 0 42px;
+}
+.banner {
+	float: left;
+	width: 311px;
+	height: 230px;
+	padding: 2px;
+	background: url(../images/banners.png) no-repeat;
+	margin: 0 17px 10px 0;
+}
+.banner.grey {
+	background-position: 0 -241px;
+}
+.banner.orange2 {
+	background-position: 0 -480px;
+}
+.banner .visual {
+	position: relative;
+}
+.banner .caption {
+	position: absolute;
+	right: 10px;
+	top: 79px;
+	color: #fff;
+	text-align: center;
+}
+.banner.grey .caption {
+	color: #000;
+}
+.banner .caption strong {
+	font-weight: bold;
+	font-size: 18px;
+	display: block;
+	min-width: 72px;
+	margin: 0 0 8px;
+}
+.banner .more {
+	text-decoration: underline;
+	color: #007eff;
+}
+.banner .more:hover {
+	text-decoration: none;
 }
 .products h3 {
 	font-weight: bold;
