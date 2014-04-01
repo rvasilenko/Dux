@@ -596,6 +596,63 @@ a:hover {
 .news .more-link:hover {
 	text-decoration: none;
 }
+.post-header {
+	margin: 0 2px 6px;
+	padding: 6px 0 7px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.breadcrumbs {
+	font-size: 14px;
+	color: #226edc;
+	margin: 0 0 4px;
+}
+.breadcrumbs:after,
+.post-single:after {
+	display: block;
+	content: '';
+	clear: both;
+}
+.breadcrumbs li {
+	float: left;
+	position: relative;
+	padding: 0 0 0 23px;
+}
+.breadcrumbs li:first-child {
+	padding-left: 0;
+}
+.breadcrumbs li:after {
+	position: absolute;
+	left: 5px;
+	top: 6px;
+	width: 14px;
+	height: 5px;
+	background: url(../images/sprite.png) no-repeat -142px -22px;
+	content: '';
+}
+.breadcrumbs li:first-child:after {
+	display: none;
+}
+.post-header h1 {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0 0 4px;
+}
+.post-single {
+	padding: 0 3px;
+	line-height: 20px;
+}
+.post-header time {
+	font-size: 12px;
+}
+.post-single .alignleft {
+	margin: 0 16px 0 4px;
+}
+.post-single .alignright {
+	margin: 0 4px 0 16px;
+}
+.post-single p {
+	margin: 0 0 20px;
+}
 .products h3 {
 	font-weight: bold;
 	font-size: 17px;
