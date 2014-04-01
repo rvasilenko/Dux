@@ -607,7 +607,8 @@ a:hover {
 	margin: 0 0 4px;
 }
 .breadcrumbs:after,
-.post-single:after {
+.post-single:after,
+.page-content:after {
 	display: block;
 	content: '';
 	clear: both;
@@ -637,7 +638,8 @@ a:hover {
 	font-weight: bold;
 	margin: 0 0 4px;
 }
-.post-single {
+.post-single,
+.page-content {
 	padding: 0 3px;
 	line-height: 20px;
 }
@@ -650,8 +652,28 @@ a:hover {
 .post-single .alignright {
 	margin: 0 4px 0 16px;
 }
-.post-single p {
+.post-single p,
+.page-content p{
 	margin: 0 0 20px;
+}
+.page-content {
+	margin: -13px 0 0;
+	text-align: justify;
+}
+.page-content .alignleft,
+.page-content .alignright {
+	padding: 13px 10px 10px;
+}
+.page-content .alignleft {
+	padding-right: 16px;
+}
+.page-content .alignright {
+	padding-left: 16px;
+}
+.page-content .alignleft img,
+.page-content .alignright img {
+	display: block;
+	margin: 0 0 13px;
 }
 .products h3 {
 	font-weight: bold;
