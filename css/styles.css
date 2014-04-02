@@ -450,7 +450,8 @@ a:hover {
 .slideshow .pagination .active a {
 	background: #7f7f7f;
 }
-.btn-more {
+.btn-more,
+.btn-submit {
 	color: #333;
 	font-weight: bold;
 	font-size: 13px;
@@ -475,8 +476,12 @@ a:hover {
 	-moz-box-shadow: 2px 2px 4px 0 #bbb;
 	-webkit-box-shadow: 2px 2px 4px 0 #bbb;
 	box-shadow: 2px 2px 3px 0 #bbb;
+	cursor: pointer;
 }
-
+.btn-submit {
+	padding: 4px 9px 4px;
+	min-width: 144px;
+}
 .page-title {
 	text-align: center;
 	font-weight: bold;
@@ -745,6 +750,34 @@ a:hover {
 .videos .player iframe {
 	display: block;
 }
+.contact-form {
+	padding: 4px 0 24px;
+}
+.contact-form label {
+	display: block;
+	font-size: 13px;
+	color: #4f4f4f;
+	margin: 0 0 5px;
+}
+.contact-form input[type=text],
+.contact-form textarea {
+	border: 1px solid #aaa;
+	padding: 10px 5px 10px;
+	width: 321px;
+	margin: 0 0 21px;
+	display: block;
+	-webkit-box-shadow: inset 1px 2px 6px 0 #ccc;
+	-moz-box-shadow: inset 1px 2px 6px 0 #ccc;
+	box-shadow: inset 1px 2px 6px 0 #ccc;
+	font: 13px Arial, Helvetica, sans-serif;
+	color: #4f4f4f;
+}
+.contact-form textarea {
+	height: 76px;
+	margin: 0 0 15px;
+	resize: none;
+}
+
 .products h3 {
 	font-weight: bold;
 	font-size: 17px;
