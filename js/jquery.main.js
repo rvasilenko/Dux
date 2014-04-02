@@ -10,9 +10,11 @@ function initLightbox() {
 		overlayOpacity : 0.5,
 		fileBottomNavCloseImage : 'images/close-lightbox.gif'
 	});
-	jQuery('a.video-lightbox').fancybox({
+	jQuery('a.video-lightbox, a.pdf').fancybox({
 		opacity: 0.5,
-		padding: 0
+		padding: 0,
+		width: 840,
+		height: 510
 	});
 }
 
